@@ -24,9 +24,9 @@ jobs:
       # Checkout code
       - uses: actions/checkout@main
 
-    #   # Lint Bicep code
-    #   - name: Run Bicep linter
-    #     run: az bicep build --file ./infra/main.bicep
+      - name: Run Bicep Linter
+        run: az bicep build --file ./infra/main.bicep --outdir ./infra/output
+
 
       - name: Upload Bicep build artifact
         uses: actions/upload-artifact@v4
