@@ -1,0 +1,27 @@
+{
+    "$schema": "https://schema.management.azure.com/schemas/2019-04-01/deploymentParameters.json#",
+    "contentVersion": "1.0.0.0",
+    "parameters": {
+        "userAlias":{
+            "value": "maki"
+        },
+        "appServicePlanSkuName": {
+            "value": "B1"
+        },
+        "appServicePlanName": {
+            "value": "maki-asp-dev"
+        },
+        "appServiceWebsiteBEName": {
+            "value": "maki-be-dev"
+        },
+        "containerRegistryName":{
+            "value": "makiacrdev"
+        },
+        "dockerRegistryImageName":{
+            "value": "maki-images"
+        },
+        "dockerRegistryImageVersion":{
+            "value": "latest"
+        }
+    }
+}
