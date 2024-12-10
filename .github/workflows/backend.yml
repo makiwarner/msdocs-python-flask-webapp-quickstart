@@ -1,15 +1,15 @@
 name: ie-bank-backend
 
 on:
-  workflow_dispatch: # Allows you to manually trigger the workflow from the GitHub Actions tab.
-  pull_request:
-    branches:
-      - main
-  push:
-    branches:
-      - '*'
-    paths-ignore:
-      - 'scripts/**'
+    workflow_dispatch: #Allows you to manually trigger the workflow from the GitHub Actions tab.
+    pull_request:
+        branches:
+          - main
+    push:
+        branches:
+          - '*'
+        paths-ignore:
+          - 'scripts/**'
 
 env:
   REGISTRY_LOGIN_SERVER: 'makiacrdev.azurecr.io'
